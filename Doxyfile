@@ -1,0 +1,174 @@
+# =============================================================================
+# CONFIGURATION DOXYGEN POUR PROJET MESURE_RES_SIMPLE
+# =============================================================================
+
+#---------------------------------------------------------------------------
+# Configuration du projet
+#---------------------------------------------------------------------------
+
+PROJECT_NAME           = "Système de Mesure de Résistance de Contact"
+PROJECT_NUMBER         = "1.0.0"
+PROJECT_BRIEF          = "Système multi-thread d'acquisition pour ESP32"
+PROJECT_LOGO           = 
+OUTPUT_DIRECTORY       = ./documentation
+
+#---------------------------------------------------------------------------
+# Configuration linguistique
+#---------------------------------------------------------------------------
+
+OUTPUT_LANGUAGE        = French
+BRIEF_MEMBER_DESC      = YES
+REPEAT_BRIEF           = YES
+ALWAYS_DETAILED_SEC    = YES
+INLINE_INHERITED_MEMB  = NO
+JAVADOC_AUTOBRIEF      = YES
+
+#---------------------------------------------------------------------------
+# Configuration de build
+#---------------------------------------------------------------------------
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_LOCAL_METHODS  = YES
+EXTRACT_ANON_NSPACES   = YES
+
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+HIDE_FRIEND_COMPOUNDS  = NO
+HIDE_IN_BODY_DOCS      = NO
+
+#---------------------------------------------------------------------------
+# Configuration des fichiers d'entrée
+#---------------------------------------------------------------------------
+
+INPUT                  = ./Mesure_RES_SIMPLE.ino \
+                        ./README.md
+INPUT_ENCODING         = UTF-8
+FILE_PATTERNS          = *.ino \
+                        *.cpp \
+                        *.c \
+                        *.h \
+                        *.hpp \
+                        *.md
+
+RECURSIVE              = YES
+EXCLUDE                = 
+EXCLUDE_SYMLINKS       = NO
+EXCLUDE_PATTERNS       = */libraries/* \
+                        */.git/*
+
+# Pour utiliser le README comme page principale
+USE_MDFILE_AS_MAINPAGE = README.md
+
+#---------------------------------------------------------------------------
+# Configuration de la sortie HTML
+#---------------------------------------------------------------------------
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+HTML_COLORSTYLE        = AUTO_LIGHT
+HTML_COLORSTYLE_HUE    = 220
+HTML_COLORSTYLE_SAT    = 100
+HTML_COLORSTYLE_GAMMA  = 80
+HTML_DYNAMIC_MENUS     = YES
+HTML_DYNAMIC_SECTIONS  = YES
+GENERATE_TREEVIEW      = YES
+TREEVIEW_WIDTH         = 250
+
+#---------------------------------------------------------------------------
+# Configuration LaTeX/PDF
+#---------------------------------------------------------------------------
+
+GENERATE_LATEX         = YES
+LATEX_OUTPUT           = latex
+COMPACT_LATEX          = NO
+PAPER_TYPE             = a4
+PDF_HYPERLINKS         = YES
+USE_PDFLATEX           = YES
+LATEX_HIDE_INDICES     = NO
+
+#---------------------------------------------------------------------------
+# Configuration des graphiques
+#---------------------------------------------------------------------------
+
+HAVE_DOT               = YES
+DOT_NUM_THREADS        = 0
+CLASS_GRAPH            = YES
+COLLABORATION_GRAPH    = YES
+GROUP_GRAPHS           = YES
+UML_LOOK               = YES
+UML_LIMIT_NUM_FIELDS   = 10
+TEMPLATE_RELATIONS     = YES
+INCLUDE_GRAPH          = YES
+INCLUDED_BY_GRAPH      = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+GRAPHICAL_HIERARCHY    = YES
+DIRECTORY_GRAPH        = YES
+DOT_IMAGE_FORMAT       = svg
+INTERACTIVE_SVG        = YES
+
+#---------------------------------------------------------------------------
+# Configuration du préprocesseur
+#---------------------------------------------------------------------------
+
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = NO
+SEARCH_INCLUDES        = YES
+INCLUDE_PATH           = 
+INCLUDE_FILE_PATTERNS  = 
+PREDEFINED             = ARDUINO=10809 \
+                        ESP32 \
+                        __attribute__(x)= \
+                        __cplusplus=201103L \
+                        IRAM_ATTR= \
+                        CONFIG_FREERTOS_HZ=1000
+
+#---------------------------------------------------------------------------
+# Configuration des avertissements
+#---------------------------------------------------------------------------
+
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES
+WARN_IF_INCOMPLETE_DOC = YES
+WARN_NO_PARAMDOC       = YES
+WARN_FORMAT            = "$file:$line: $text"
+
+#---------------------------------------------------------------------------
+# Configuration de la recherche
+#---------------------------------------------------------------------------
+
+SEARCHENGINE           = YES
+SERVER_BASED_SEARCH    = NO
+EXTERNAL_SEARCH        = NO
+
+#---------------------------------------------------------------------------
+# Optimisations pour code embarqué
+#---------------------------------------------------------------------------
+
+OPTIMIZE_OUTPUT_FOR_C  = YES
+TYPEDEF_HIDES_STRUCT   = NO
+BUILTIN_STL_SUPPORT    = YES
+
+#---------------------------------------------------------------------------
+# Groupes et modules
+#---------------------------------------------------------------------------
+
+DISTRIBUTE_GROUP_DOC   = YES
+GROUP_NESTED_COMPOUNDS = YES
+SUBGROUPING            = YES
+
+#---------------------------------------------------------------------------
+# Options spécifiques Arduino/ESP32
+#---------------------------------------------------------------------------
+
+EXTENSION_MAPPING      = ino=C++
+TAB_SIZE               = 2
+MARKDOWN_SUPPORT       = YES
+AUTOLINK_SUPPORT       = YES
