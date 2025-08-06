@@ -1,0 +1,75 @@
+\doxysection{Référence de la structure Buffer\+Circulaire}
+\hypertarget{struct_buffer_circulaire}{}\label{struct_buffer_circulaire}\index{BufferCirculaire@{BufferCirculaire}}
+
+
+Buffer circulaire thread-\/safe pour les mesures.  
+
+
+
+
+Graphe de collaboration de Buffer\+Circulaire\+:
+% FIG 0
+\doxysubsubsection*{Champs de données}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_mesure_brute}{Mesure\+Brute}} \mbox{\hyperlink{struct_buffer_circulaire_a0e60023bdab4b8611f40506f57e6ffab}{mesures}} \mbox{[}\mbox{\hyperlink{group___t_i_m_i_n_g_ga76846ed6670a498c96e0169c41dd4e2d}{TAILLE\+\_\+\+BUFFER}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Tableau des mesures. \end{DoxyCompactList}\item 
+volatile uint32\+\_\+t \mbox{\hyperlink{struct_buffer_circulaire_a2ebaa22810df0b3ef46514db0f14e730}{tete}}
+\begin{DoxyCompactList}\small\item\em Index d\textquotesingle{}écriture. \end{DoxyCompactList}\item 
+volatile uint32\+\_\+t \mbox{\hyperlink{struct_buffer_circulaire_ab64dc87a6b98b1f6766784b3059116a1}{queue}}
+\begin{DoxyCompactList}\small\item\em Index de lecture. \end{DoxyCompactList}\item 
+volatile uint32\+\_\+t \mbox{\hyperlink{struct_buffer_circulaire_a64aab24b87534036bff5ca041c4014aa}{count}}
+\begin{DoxyCompactList}\small\item\em Nombre d\textquotesingle{}éléments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Buffer circulaire thread-\/safe pour les mesures. 
+
+\label{doc-variable-members}
+\Hypertarget{struct_buffer_circulaire_doc-variable-members}
+\doxysubsection{Documentation des champs}
+\Hypertarget{struct_buffer_circulaire_a64aab24b87534036bff5ca041c4014aa}\index{BufferCirculaire@{BufferCirculaire}!count@{count}}
+\index{count@{count}!BufferCirculaire@{BufferCirculaire}}
+\doxysubsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily \label{struct_buffer_circulaire_a64aab24b87534036bff5ca041c4014aa} 
+volatile uint32\+\_\+t Buffer\+Circulaire\+::count}
+
+
+
+Nombre d\textquotesingle{}éléments. 
+
+\Hypertarget{struct_buffer_circulaire_a0e60023bdab4b8611f40506f57e6ffab}\index{BufferCirculaire@{BufferCirculaire}!mesures@{mesures}}
+\index{mesures@{mesures}!BufferCirculaire@{BufferCirculaire}}
+\doxysubsubsection{\texorpdfstring{mesures}{mesures}}
+{\footnotesize\ttfamily \label{struct_buffer_circulaire_a0e60023bdab4b8611f40506f57e6ffab} 
+\mbox{\hyperlink{struct_mesure_brute}{Mesure\+Brute}} Buffer\+Circulaire\+::mesures\mbox{[}\mbox{\hyperlink{group___t_i_m_i_n_g_ga76846ed6670a498c96e0169c41dd4e2d}{TAILLE\+\_\+\+BUFFER}}\mbox{]}}
+
+
+
+Tableau des mesures. 
+
+\Hypertarget{struct_buffer_circulaire_ab64dc87a6b98b1f6766784b3059116a1}\index{BufferCirculaire@{BufferCirculaire}!queue@{queue}}
+\index{queue@{queue}!BufferCirculaire@{BufferCirculaire}}
+\doxysubsubsection{\texorpdfstring{queue}{queue}}
+{\footnotesize\ttfamily \label{struct_buffer_circulaire_ab64dc87a6b98b1f6766784b3059116a1} 
+volatile uint32\+\_\+t Buffer\+Circulaire\+::queue}
+
+
+
+Index de lecture. 
+
+\Hypertarget{struct_buffer_circulaire_a2ebaa22810df0b3ef46514db0f14e730}\index{BufferCirculaire@{BufferCirculaire}!tete@{tete}}
+\index{tete@{tete}!BufferCirculaire@{BufferCirculaire}}
+\doxysubsubsection{\texorpdfstring{tete}{tete}}
+{\footnotesize\ttfamily \label{struct_buffer_circulaire_a2ebaa22810df0b3ef46514db0f14e730} 
+volatile uint32\+\_\+t Buffer\+Circulaire\+::tete}
+
+
+
+Index d\textquotesingle{}écriture. 
+
+
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_mesure___r_e_s___s_i_m_p_l_e_8ino}{Mesure\+\_\+\+RES\+\_\+\+SIMPLE.\+ino}}\end{DoxyCompactItemize}
