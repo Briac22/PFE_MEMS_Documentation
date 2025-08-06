@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Système de Mesure de Résistance de Contact: Configuration temporelle</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Système de Mesure de Résistance de Contact<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Système multi-thread d&#39;acquisition pour ESP32</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('group___t_i_m_i_n_g.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Configuration temporelle </div></div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gaecf2c7161e42bd31ff9695933a1202f2" id="r_gaecf2c7161e42bd31ff9695933a1202f2"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaecf2c7161e42bd31ff9695933a1202f2">INTERVALLE_AFFICHAGE_MS</a> = 200</td></tr>
+<tr class="memdesc:gaecf2c7161e42bd31ff9695933a1202f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Période rafraîchissement LCD (ms)  <br /></td></tr>
+<tr class="memitem:gad7ea73311bc095b278a461ed9f57b9cb" id="r_gad7ea73311bc095b278a461ed9f57b9cb"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad7ea73311bc095b278a461ed9f57b9cb">INTERVALLE_SAUVEGARDE_MS</a> = 10</td></tr>
+<tr class="memdesc:gad7ea73311bc095b278a461ed9f57b9cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Période écriture SD (ms)  <br /></td></tr>
+<tr class="memitem:ga76846ed6670a498c96e0169c41dd4e2d" id="r_ga76846ed6670a498c96e0169c41dd4e2d"><td class="memItemLeft" align="right" valign="top">const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga76846ed6670a498c96e0169c41dd4e2d">TAILLE_BUFFER</a> = 500</td></tr>
+<tr class="memdesc:ga76846ed6670a498c96e0169c41dd4e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Taille buffer circulaire.  <br /></td></tr>
+<tr class="memitem:gad7699f5b48066028c04319b81466ebe7" id="r_gad7699f5b48066028c04319b81466ebe7"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad7699f5b48066028c04319b81466ebe7">NB_TESTS_TOTAL</a> = 10</td></tr>
+<tr class="memdesc:gad7699f5b48066028c04319b81466ebe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre de tests par cycle.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Description détaillée</h2>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Documentation des variables</h2>
+<a id="gaecf2c7161e42bd31ff9695933a1202f2" name="gaecf2c7161e42bd31ff9695933a1202f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaecf2c7161e42bd31ff9695933a1202f2">&#9670;&#160;</a></span>INTERVALLE_AFFICHAGE_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t INTERVALLE_AFFICHAGE_MS = 200</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Période rafraîchissement LCD (ms) </p>
+
+</div>
+</div>
+<a id="gad7ea73311bc095b278a461ed9f57b9cb" name="gad7ea73311bc095b278a461ed9f57b9cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad7ea73311bc095b278a461ed9f57b9cb">&#9670;&#160;</a></span>INTERVALLE_SAUVEGARDE_MS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t INTERVALLE_SAUVEGARDE_MS = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Période écriture SD (ms) </p>
+
+</div>
+</div>
+<a id="gad7699f5b48066028c04319b81466ebe7" name="gad7699f5b48066028c04319b81466ebe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad7699f5b48066028c04319b81466ebe7">&#9670;&#160;</a></span>NB_TESTS_TOTAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int NB_TESTS_TOTAL = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Nombre de tests par cycle. </p>
+
+</div>
+</div>
+<a id="ga76846ed6670a498c96e0169c41dd4e2d" name="ga76846ed6670a498c96e0169c41dd4e2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga76846ed6670a498c96e0169c41dd4e2d">&#9670;&#160;</a></span>TAILLE_BUFFER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint32_t TAILLE_BUFFER = 500</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Taille buffer circulaire. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Généré par <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>
